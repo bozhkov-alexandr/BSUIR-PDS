@@ -1,0 +1,15 @@
+<svg viewBox="0 0 100 100" width='100%' fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+<linearGradient id='gr' x1='0%' y1="0%" x2="100%" y2="0%">
+<stop offset='86.47%' stop-color="red" stop-opacity='1'/>
+<stop offset='88%' stop-color="red" stop-opacity='0.8'/>
+<stop offset='92%' stop-color="red" stop-opacity='0.5'/>
+<stop offset='97%' stop-color="red" stop-opacity='0.1'/>
+<stop offset='100%' stop-color="red" stop-opacity='0'/>
+</linearGradient>
+</defs>
+
+
+<rect x='0' y='0' width='100' height='100' fill='url(#gr)'/>
+</svg>
