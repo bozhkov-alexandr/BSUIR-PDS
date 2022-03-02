@@ -15,7 +15,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-config" content="https://rolling-scopes-school.github.io/staciekot-JSFE2021Q1/online-zoo/assets/icons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
-   <script src="../BSUIR-PDS/pages/contacts/script.js" defer></script>
+   <script src="script.js" defer></script>
    <title>Contact us</title>
 </head>
 <body>
@@ -87,22 +87,22 @@
             us a message and we'll get back to you as soon as we can. 
           </p>
         </div>
-        <form class="form" action="" method="get" name="send-message">
+        <form class="form" action="send.php" method="post" name="send-message">
           <div class="form-row">
             <label  class="label" for="name">Your Name</label>
-            <input class="input-item" type="text" name="name" id="name" required placeholder="First and last name">
+            <input class="input-item" type="text" name="name" id="name" name="name" required placeholder="First and last name">
           </div>
           <div class="form-row">
             <label  class="label" for="email">Your Email Address</label>
-            <input class="input-item" type="email" name="email" id="email" required placeholder="Enter your email">
+            <input class="input-item" type="email" name="email" id="email" name="email" required placeholder="Enter your email">
           </div>
           <div class="form-row">
             <label  class="label" for="subject">Subject</label>
-            <input class="input-item" type="text" name="subject" id="subject" required placeholder="Enter the subject">
+            <input class="input-item" type="text" name="subject" id="subject" name="subject" required placeholder="Enter the subject">
           </div>
           <div class="form-row">
             <label  class="label" for="message">Message</label>
-            <textarea class="input-item message-input" name="message" id="message" required placeholder="Enter your message"></textarea>
+            <textarea class="input-item message-input" name="message" id="message" name="message" required placeholder="Enter your message"></textarea>
           </div>
           <button class="button btn-solid" type="submit">send message</button>
         </form>
@@ -110,55 +110,56 @@
     </div>
   </main>
   <footer>
-     <div class="container">
-        <div class="footer-row footer-row-top">
-          <div class="logos">
-            <ul class="logos-list">
-               <li class="logos-item online-zoo" title="Online Zoo">
-                  <div class="logo-icon">
-                    <img src="../BSUIR-PDS/assets/icons/logo-w.svg" alt="logo" class="logo-icon">
-                  </div>
-               </li>               
-            </ul>
-         </div>
-           <div class="navigation">
-              <ul class="navigation-list">
-                 <li class="navigation-item"><a href="index.html">About</a></li>
-                 <li class="navigation-item"><a href="map.html">Map</a></li>
-                 <li class="navigation-item"><a href="panda.html">Zoos</a></li>
-                 <li class="navigation-item"><a href="#">Contact us</a></li>
-              </ul>
-           </div>
-           <button class="button btn-tr">Donate for volunteers</button>
+    <div class="container">
+       <div class="footer-row footer-row-top">
+         <div class="logos">
+           <ul class="logos-list">
+             <li class="logos-item online-zoo">
+               <a href="index.html">
+                <div class="logo-icon">
+                  <img src="../BSUIR-PDS/assets/icons/logo-w.svg"/>
+                </div>
+               </a>
+             </li>               
         </div>
-        <div class="footer-row footer-row-bottom">           
-            <div class="social-links">
-              <ul class="social-links-list">
-                <li class="social-links-item">
-                  <a href="https://www.youtube.com/">
-                    <div class="social-icon youtube">
-                      <img src="../BSUIR-PDS/assets/images/YouTube.png" />
-                    </div>
-                 </a>
-                 </li>
-                <li class="social-links-item">
-                  <a href="https://www.instagram.com/">
-                    <div class="social-icon instagram">
-                      <img src="../BSUIR-PDS/assets/images/Instagram.png" />
-                    </div>
-                  </a>
-                </li>
-                <li class="social-links-item">
-                  <a href="https://www.facebook.com/">
-                   <div class="social-icon facebook">
-                     <img src="../BSUIR-PDS/assets/images/Facebook.png" />
-                   </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-        </div>
-     </div>
-  </footer>
+          <div class="navigation">
+             <ul class="navigation-list">
+                <li class="navigation-item"><a href="index.html">About</a></li>
+                <li class="navigation-item"><a href="map/map.html">Map</a></li>
+                <li class="navigation-item"><a href="panda.html">Zoos</a></li>
+                <li class="navigation-item"><a href="contacts.html">Contact us</a></li>
+             </ul>
+          </div>
+          <button class="button btn-tr light">Donate for volunteers</button>
+       </div>
+       <div class="footer-row footer-row-bottom">           
+          <div class="social-links">
+           <ul class="social-links-list">
+             <li class="social-links-item">
+               <a href="https://www.youtube.com/">
+                 <div class="social-icon youtube">
+                   <img src="../BSUIR-PDS/assets/images/YouTube.png" />
+                 </div>
+              </a>
+              </li>
+             <li class="social-links-item">
+               <a href="https://www.instagram.com/">
+                 <div class="social-icon instagram">
+                   <img src="../BSUIR-PDS/assets/images/Instagram.png" />
+                 </div>
+               </a>
+             </li>
+             <li class="social-links-item">
+               <a href="https://www.facebook.com/">
+                <div class="social-icon facebook">
+                  <img src="../BSUIR-PDS/assets/images/Facebook.png" />
+                </div>
+               </a>
+             </li>
+           </ul>
+          </div>
+       </div>
+    </div>
+ </footer>
 </body>
 </html>
